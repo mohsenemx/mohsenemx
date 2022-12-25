@@ -6,10 +6,10 @@ My Favorite Langs:
 - Assembly
 - HTML
 - JSON
-Langs I respect:
+  >> Langs I respect:
 - C++
 - Javascipt
-Langs I've tried:
+  >> Langs I've tried:
 - PHP
 - HTML , CSS
 - Javascript
@@ -17,6 +17,6 @@ Langs I've tried:
 - C
 - C++
 - Rust
-Langs I **HATE** :
+  >> Langs I **HATE** :
 - PHP
 - Java

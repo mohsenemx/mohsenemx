@@ -1,22 +1,16 @@
-Hello, I'm Mohsen, also known as MohsenEMX.
-I'm a Junior Programmer who enjoys and hates coding at the same time.
-I'm on my way to Master C++ & Javascript. There's also *some* knowledge of HTML & CSS there.
+#include <life.h>
+using namespace std;
 
->My Favorite Langs:
-- Assembly
-- HTML
-- JSON
-  > Langs I respect:
-- C++
-- Javascipt
-  > Langs I've tried:
-- PHP
-- HTML , CSS
-- Javascript
-- Java
-- C
-- C++
-  > Langs I **HATE** :
-- PHP
-- Java
-- Python
+int main() {
+string name = "Mohsen";
+bool isProgrammer = true; 
+string favs = {"Chess","C++","JavaScript"};
+bool isAlive = true;
+int age = 17;
+for (int i = 0; isAlive; i++ {
+    if(isUserDead()) {
+      isAlive = false;
+    }
+    age++;
+  }
+}

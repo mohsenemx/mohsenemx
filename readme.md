@@ -1,3 +1,4 @@
+```cpp
 #include <life.h>
 using namespace std;
 
@@ -14,3 +15,4 @@ for (int i = 0; isAlive; i++ {
     age++;
   }
 }
+```

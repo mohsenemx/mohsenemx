@@ -4,12 +4,13 @@
 using namespace std;
 
 int main() {
+
 string name = "Mohsen";
 bool isProgrammer = true; 
-string favs[] = {"Chess","C++","JavaScript"};
+string favs[] = {"Chess","C++","JavaScript","Electronics"};
 bool isAlive = true;
 int age = 17;
-for (int i = 0; isAlive; i++ {
+for (int i = 0; isAlive; i++) {
     if(isUserDead()) {
       isAlive = false;
     }

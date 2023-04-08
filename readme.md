@@ -1,23 +1,9 @@
-```cpp
-#include <life.h>
-
-using namespace std;
-
-int main() {
-
-string name = "Mohsen";
-bool isProgrammer = true; 
-string favs[] = {"Chess","C++","JavaScript","Electronics"};
-bool isAlive = true;
-int age = 17;
-for (int i = 0; isAlive; i++) {
-    if(isUserDead()) {
-      isAlive = false;
-    }
-    age++;
-  }
-  if (!isAlive) {
-     return 0;
-  }
-}
-```
+# Who am I?
+I'm Mohsen Taghavi, A Jr. Software Developer from Iran.
+## What do I do?
+I'm interseted in Front-End Web Design and I use following Languages:
+[![Languages](https://skillicons.dev/icons?i=cpp,md,html,css,js,dart,flutter&theme=dark)](#)
+and I use following technologies:
+[![Apps](https://skillicons.dev/icons?i=discord,ps,pr,arduino,github,unity,vscode,visualstudio&theme=dark)](#)
+## My Socials
+You can find my socials [Here](https://s.nashef.ir/?u=social) and my personal website [Here](https://en.mohsentaghavi.ir)

@@ -1,5 +1,6 @@
 # Who am I?
 I'm Mohsen Taghavi, A Jr. Software Developer from Iran.
+I know C++ to some extent and did Javascript and Front-End stuff for 1 year. And now, Just completed some Dart courses. I'm learning Flutter now.
 ## What do I do?
 I'm interseted in Front-End Web Design and I use following Languages:
 [![Languages](https://skillicons.dev/icons?i=cpp,md,html,css,js,dart,flutter&theme=dark)](#)

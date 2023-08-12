@@ -40,7 +40,7 @@ body {
 .card {
   max-width: 340px;
   margin: auto;
-  overflow-y: auto;
+  overflow-y: visible;
   z-index: 1;
   overflow-x: hidden;
   background-color: #fff;
@@ -59,6 +59,7 @@ body {
   height: 430px;
 }
 .card[data-state="#experience"] {
+  overflow-y: visible;
   height: 550px;
 }
 .card.is-active .card-header {

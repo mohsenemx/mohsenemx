@@ -1,4 +1,3 @@
-console.log("Mohsen Taghavi Also Known as MohsenEMX");
 const buttons = document.querySelectorAll(".card-buttons button");
 const sections = document.querySelectorAll(".card-section");
 const card = document.querySelector(".card");

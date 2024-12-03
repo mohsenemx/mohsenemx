@@ -2,12 +2,16 @@
 I'm Mohsen Taghavi, A Jr. Software Developer from Iran.
 I know C++ to some extent and did Javascript and Front-End stuff for 1 year. And now, Just completed some Dart courses. I'm learning Flutter now.
 ## What do I do?
-I'm interseted in application Design and I use these Languages:
 
-[![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,flutter,kotlin,bash&theme=dark)](#)
+### 💎 Languages:
 
+[![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,bash&theme=dark)](#)
 
-I also use these technologies:
+### ✨ Frameworks:
+
+[![Languages](https://skillicons.dev/icons?i=flutter&theme=dark)](#)
+
+### 🧨 Technologies:
 
 [![Technologies](https://skillicons.dev/icons?i=git,mongodb,mysql,arduino,firebase,supabase&theme=dark)](#)
 ## My Stats

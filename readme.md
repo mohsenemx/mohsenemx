@@ -5,7 +5,7 @@ I'm studying Computer Engineering at Shahid Beheshti (Sampad), Sari
 
 ### 💎 Languages:
 
-![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,wasm,bash&theme=dark)
+![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,wasm,php,bash&theme=dark)
 
 ### ✨ Frameworks:
 

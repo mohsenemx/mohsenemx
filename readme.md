@@ -5,7 +5,7 @@ I'm studying Computer Engineering at Shahid Beheshti (Sampad), Sari
 
 ### 💎 Languages:
 
-![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,wasm,php,bash&theme=dark)
+![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,bash&theme=dark)
 
 ### ✨ Frameworks:
 
@@ -17,7 +17,7 @@ I'm studying Computer Engineering at Shahid Beheshti (Sampad), Sari
 
 ### ✨ Learning:
 
-![Learing](https://skillicons.dev/icons?i=flutter,go&theme=dark)
+![Learing](https://skillicons.dev/icons?i=flutter&theme=dark)
 
 ## My Stats
 <a href="http://www.github.com/MohsenEMX"><img src="https://github-readme-stats.vercel.app/api?username=MohsenEMX&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=ffffff&bg_color=1c1917&show_icons=true" alt="MohsenEMX's Stats" /></a>

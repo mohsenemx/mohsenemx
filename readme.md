@@ -1,6 +1,6 @@
 # Who am I?
-I'm Mohsen Taghavi, A Jr. Software Developer from Iran.
-I'm studying Computer Engineering at Shahid Beheshti (Sampad), Sari
+Hey, I'm Mohsen!
+I'm studying Computer Engineering at Mazandaran National University of Skills
 ## What do I do?
 
 ### 💎 Languages:

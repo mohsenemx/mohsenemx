@@ -1,25 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap);
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
-  }
-  to {
-    opacity: 1;
-  }
-}
+
 @keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translatey(40px);
-  }
-  to {
-    opacity: 1;
-  }
+  0% { opacity: 0; transform: translatey(40px); }
+  100% { opacity: 1; }
 }
+
 * {
   box-sizing: border-box;
 }
+
 body {
   color: #2b2c48;
   font-family: "Jost", sans-serif;
@@ -31,14 +20,30 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  margin: 0;
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5cde2;
+  border-radius: 10px;
+}
+
 .card,
 .card-header {
   position: relative;
   display: flex;
 }
+
 .card {
-  max-width: 340px;
+  max-width: 380px; /* Slightly wider to accommodate new timeline layout */
+  width: 100%;
   margin: auto;
   overflow-y: visible;
   z-index: 1;
@@ -47,28 +52,20 @@ body {
   transition: 0.3s;
   flex-direction: column;
   border-radius: 10px;
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2), 0 10px 20px rgba(0,0,0,0.1);
 }
-.card[data-state="#about"] {
-  height: 450px;
+
+.card[data-state="#about"] { height: 450px; }
+.card[data-state="#about"] .card-main { padding-top: 0; }
+.card[data-state="#skills"] { height: 450px; }
+.card[data-state="#contact"] { height: 430px; }
+.card[data-state="#experience"] { 
+  height: 550px; 
+  overflow-y: auto; 
 }
-.card[data-state="#about"] .card-main {
-  padding-top: 0;
-}
-.card[data-state="#contact"] {
-  height: 430px;
-}
-.card[data-state="#experience"] {
-  overflow-y: visible;
-  height: 550px;
-}
-.card.is-active .card-header {
-  height: 80px;
-}
-.card.is-active .card-cover {
-  height: 100px;
-  top: -50px;
-}
+
+.card.is-active .card-header { height: 80px; }
+.card.is-active .card-cover { height: 100px; top: -50px; }
 .card.is-active .card-avatar {
   transform: none;
   left: 20px;
@@ -81,24 +78,16 @@ body {
   left: 86px;
   transform: none;
 }
-.card.is-active .card-fullname {
-  bottom: 18px;
-  font-size: 19px;
-}
-.card.is-active .card-jobtitle {
-  bottom: 16px;
-  letter-spacing: 1px;
-  font-size: 10px;
-}
+.card.is-active .card-fullname { bottom: 18px; font-size: 19px; }
+.card.is-active .card-jobtitle { bottom: 16px; letter-spacing: 1px; font-size: 10px; }
+
 .card-header {
   height: 200px;
   flex-shrink: 0;
   width: 100%;
-}
-.card-header,
-.card-header * {
   transition: 0.3s;
 }
+
 .card-cover {
   width: 100%;
   position: absolute;
@@ -112,33 +101,37 @@ body {
   transform: scale(1.2);
   transition: 0.5s;
 }
+
 .card-avatar {
   width: 100px;
   height: 100px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  -o-object-position: center;
   object-position: center;
-  -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-64px);
+  transition: 0.3s;
 }
+
 .card-fullname,
 .card-jobtitle {
   position: absolute;
   bottom: 0;
   white-space: nowrap;
   left: 50%;
+  transition: 0.3s;
 }
+
 .card-fullname {
   font-size: 22px;
   font-weight: 700;
   text-align: center;
   transform: translateY(-10px) translateX(-50%);
 }
+
 .card-jobtitle {
   font-size: 11px;
   font-weight: 500;
@@ -148,6 +141,7 @@ body {
   margin: 0;
   transform: translateX(-50%) translateY(-7px);
 }
+
 .card-main {
   position: relative;
   flex: 1;
@@ -155,14 +149,18 @@ body {
   padding-top: 10px;
   flex-direction: column;
 }
+
 .card-subtitle {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 8px;
+  letter-spacing: 1px;
 }
+
 .card-content {
   padding: 20px;
 }
+
 .card-desc {
   line-height: 1.6;
   color: #636b6f;
@@ -171,22 +169,44 @@ body {
   font-weight: 400;
   font-family: "DM Sans", sans-serif;
 }
+.card-desc a {
+  color: #516acc;
+  text-decoration: none;
+}
+
+/* Skills Badges */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+.skill-badge {
+  background: rgba(81, 106, 204, 0.1);
+  color: #516acc;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "DM Sans", sans-serif;
+  transition: 0.3s;
+}
+.skill-badge:hover {
+  background: #516acc;
+  color: #fff;
+}
+
 .card-social {
   display: flex;
   align-items: center;
   padding: 0 20px;
   margin-bottom: 30px;
 }
-.card-social svg {
-  fill: #a5b5ce;
-  width: 16px;
-  display: block;
-  transition: 0.3s;
-}
 .card-social a {
   color: #8797a1;
-  height: 32px;
-  width: 32px;
+  height: 38px;
+  width: 38px;
+  font-size: 18px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -194,13 +214,13 @@ body {
   background-color: rgba(93, 133, 193, 0.05);
   border-radius: 50%;
   margin-right: 10px;
+  text-decoration: none;
 }
-.card-social a:hover svg {
-  fill: #637faa;
+.card-social a:hover {
+  color: #fff;
+  background-color: #516acc;
 }
-.card-social a:last-child {
-  margin-right: 0;
-}
+
 .card-buttons {
   display: flex;
   background-color: #fff;
@@ -208,17 +228,15 @@ body {
   position: sticky;
   bottom: 0;
   left: 0;
+  z-index: 5;
 }
 .card-buttons button {
   flex: 1 1 auto;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background: 0;
-  font-size: 13px;
+  font-size: 12px;
   border: 0;
-  padding: 15px 5px;
+  padding: 15px 2px;
   cursor: pointer;
   color: #5c5c6d;
   transition: 0.3s;
@@ -238,54 +256,70 @@ body {
     rgba(211, 226, 255, 0.4) 100%
   );
 }
+
 .card-section {
   display: none;
 }
 .card-section.is-active {
   display: block;
-  -webkit-animation: fadeIn 0.6s both;
   animation: fadeIn 0.6s both;
 }
+
+/* Re-engineered Timeline for Year Ranges */
 .card-timeline {
   margin-top: 30px;
   position: relative;
 }
 .card-timeline:after {
   background: linear-gradient(to top, rgba(134, 214, 243, 0) 0, #516acc 100%);
-  left: 42px;
+  left: 75px; /* Pushed further right to allow text room */
   width: 2px;
   top: 0;
   height: 100%;
   position: absolute;
   content: "";
 }
+
 .card-item {
   position: relative;
-  padding-left: 60px;
-  padding-right: 20px;
+  padding-left: 100px; /* Room for text (0-60px) and line (75px) */
+  padding-right: 15px;
   padding-bottom: 30px;
   z-index: 1;
 }
 .card-item:last-child {
-  padding-bottom: 5px;
+  padding-bottom: 20px;
 }
+
+/* The Timeline Dot */
+.card-item:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 70px; /* Centered precisely on the 75px line */
+  width: 12px;
+  height: 12px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #a0aee3 0, #516acc 100%);
+  z-index: 2;
+}
+
+/* The Year Text */
 .card-item:after {
   content: attr(data-year);
   position: absolute;
-  top: 0;
-  left: 37px;
-  width: 8px;
-  height: 8px;
-  line-height: 0.6;
-  border: 2px solid #fff;
+  top: 2px;
+  left: 0;
+  width: 62px; /* Bounds the text width */
+  text-align: right; /* Keeps text snug against the line */
   font-size: 11px;
-  text-indent: -35px;
-  border-radius: 50%;
-  color: rgba(134, 134, 134, 0.7);
-  background: linear-gradient(to bottom, #a0aee3 0, #516acc 100%);
+  font-weight: 600;
+  color: #516acc;
 }
+
 .card-item-title {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   margin-bottom: 5px;
 }
@@ -295,30 +329,27 @@ body {
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
 }
+
 .card-contact-wrapper {
   margin-top: 20px;
 }
 .card-contact {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 14px;
   color: #6f6f7b;
   font-family: "DM Sans", sans-serif;
   line-height: 1.6;
-  cursor: pointer;
+  margin-bottom: 16px;
 }
-.card-contact + .card-contact {
-  margin-top: 16px;
-}
-.card-contact svg {
-  flex-shrink: 0;
-  width: 30px;
-  min-height: 34px;
+.card-contact i {
+  font-size: 18px;
+  color: #516acc;
   margin-right: 12px;
-  transition: 0.3s;
   padding-right: 12px;
   border-right: 1px solid #dfe2ec;
 }
+
 .contact-me {
   border: 0;
   outline: 0;
@@ -332,10 +363,14 @@ body {
   padding: 12px 16px;
   width: 100%;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 15px;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
   font-family: "Jost", sans-serif;
   transition: 0.3s;
+}
+.contact-me:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
 }

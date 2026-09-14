@@ -9,7 +9,7 @@ I'm studying Computer Engineering at **Mazandaran National University of Skills*
 
 ### 💎 Languages:
 
-![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,dart,kotlin,bash&theme=dark)
+![Languages](https://skillicons.dev/icons?i=js,ts,nodejs,bun,dart,powershell,cpp&theme=dark)
 
 ### ✨ Frameworks:
 
@@ -17,7 +17,7 @@ I'm studying Computer Engineering at **Mazandaran National University of Skills*
 
 ### 🧨 Technologies:
 
-![Technologies](https://skillicons.dev/icons?i=git,mongodb,mysql,arduino,firebase,supabase,powershell&theme=dark)
+![Technologies](https://skillicons.dev/icons?i=git,mongodb,mysql,arduino,firebase,supabase,postman,windows,linux&theme=dark)
 
 ### ✨ Learning:
 

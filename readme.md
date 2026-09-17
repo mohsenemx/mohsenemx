@@ -3,7 +3,7 @@
 
 # Who am I?
 Hey, I'm Mohsen!
-I'm studying Computer Engineering at **Mazandaran National University of Skills**
+I'm studying Software Engineering at **Mazandaran National University of Skills**
 
 ## What do I do?
 
